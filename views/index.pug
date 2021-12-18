@@ -1,0 +1,64 @@
+doctype html
+head 
+    title NadeemDanceAcademy
+    style
+        include ../static/style.css
+body 
+    nav#navbar.top 
+       
+        ul  
+            div#logo
+                img(src="/static/img/logo.png")
+                | NDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Info]
+            li #[a(href="/") Contact]
+    section#introSection 
+        h2  Welcome to Nadeem's academy of dance 
+        h5 Eat sleep Dance  repeat
+    section#missionSection 
+        h3 Our Mission
+        div#cardbox
+            div.card
+                h4 Dance Perfection
+                div.card-box
+                    div.card-image
+                        img(src="/static/img/1.png")
+                    div.card-content
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, et.
+      
+            div.card
+                h4 Dance your way
+                div.card-box
+                    div.card-image
+                        img(src="/static/img/2.png")
+                    div.card-content
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, et.
+      
+            div.card
+                h4 Expert teaching
+                div.card-box
+                    div.card-image
+                        img(src="/static/img/3.png")
+                    div.card-content
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, et.
+      
+    section#sponsorSection 
+        h3 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="" class="spimage")
+        
+            img(src="/static/img/logo2.png", alt="" class="spimage")
+        
+            img(src="/static/img/logo3.png", alt="" class="spimage")
+        
+            img(src="/static/img/logo4.png", alt="" class="spimage")
+    footer#footer 
+
+        | Copyright ©  2021 nadeemdanceacademy.com |        all rights reserved
+
+    script  
+        include ../static/index.js 
+
