@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+}
+h1{ 
+    border: 2px;
+    padding-top: 100px;
+    text-align: center;
+}
+form{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.myInput{
+    width: 33%;
+    padding: 4px 0px;
+    text-align: center;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+.btn{
+    margin: 10px 0px;
+    padding: 4px 20px;
+    cursor: pointer;
+    
+  
+}
+.btn:hover{
+  color: white;
+  padding: 6px 25px;
+
+  background: black;
+  
+}
