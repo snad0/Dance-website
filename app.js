@@ -10,7 +10,7 @@ const bodyparser = require('body-parser')
 mongoose.connect('mongodb://localhost:27017/DanceContact', {useNewUrlParser: true});
 
 // const port=800;
-const port=process.env.PORt || 800;
+const port=process.env.PORT || 800;
 
 
 //applying mongoose
