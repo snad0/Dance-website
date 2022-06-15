@@ -12,12 +12,12 @@ block style
 block content 
     h1 Contact Us
     form(action="/contact", method="post") 
-        input(type="name", class="myInput", name="name", placeholder="Enter Your Name")
-        input(type="phone", class="myInput", name="phone", placeholder="Enter Your Number")
-        input(type="address", class="myInput", name="address", placeholder="Enter Your address")
-        input(type="name", class="myInput", name="Gender", placeholder="Enter Your Gender")
-        input(type="email", class="myInput", name="email", placeholder="Enter Your email")
-        input(type="number", class="myInput", name="number", placeholder="Enter Your Age")
+        input(type="name", class="myInput",   id="name"    name="Name",    placeholder="Enter Your Name")
+        input(type="phone", class="myInput",   id="phone"    name="phone", placeholder="Enter Your Number")
+        input(type="address", class="myInput",   id="address"   name="address", placeholder="Enter Your address")
+        input(type="name", class="myInput"   ,id="gender"   name="gender", placeholder="Enter Your Gender")
+        input(type="email", class="myInput"   ,id="email"   name="email", placeholder="Enter Your email")
+        input(type="number", class="myInput",   id="Age"   name="Age", placeholder="Enter Your Age")
         button(class="btn")
             | Submit
 
