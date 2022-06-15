@@ -10,7 +10,7 @@ const bodyparser = require('body-parser')
 mongoose.connect('mongodb://localhost:27017/DanceContact', {useNewUrlParser: true});
 
 // const port=800;
-const port=process.env.PORT || 800;
+// const port=process.env.PORT || 800;
 
 
 //applying mongoose
@@ -62,9 +62,9 @@ app.get('/contact', (req, res)=>{
 
 
 
-app.listen(port, ()=>{
-    console.log(`The application started succesfully on port ${port}`);
-});
+// app.listen(port, ()=>{
+//     console.log(`The application started succesfully on port ${port}`);
+// });
 app.post('/contact',(req,res)=>{
     
     console.log(req.body);
@@ -85,3 +85,5 @@ app.post('/contact',(req,res)=>{
     const params={"message": "your form have been submitted"}
     res.status(200).render("home.pug",params);
 });
+
+app.listen(process.env.PORT || 800)
